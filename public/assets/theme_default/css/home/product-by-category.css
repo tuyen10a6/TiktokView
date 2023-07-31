@@ -1,0 +1,82 @@
+.direction-all-content {
+    background: #fff;
+    min-height: 1000px;
+}
+
+.direction-all-content .title {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.direction-all-content .title span {
+    color: #101828;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.direction-all-content .title .icon-close {
+    width: 24px;
+    height: 24px;
+    margin: 0px 8px;
+}
+
+.custom-select {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    background-color: #5fcbf7;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+.select-items div, .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #5fcbf7;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
